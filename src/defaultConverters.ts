@@ -226,7 +226,7 @@ export const defaultConverters: ISchemaConverters = {
     type: 'string'
   },
   [ValidationTypes.IS_IP]: meta => ({
-    format: 'ipv' + (meta.constraints[0] === '6' ? 6 : 4),
+    format: 'ipv' + (meta.constraints[0] || 4),
     type: 'string'
   }),
   [ValidationTypes.IS_ISBN]: {

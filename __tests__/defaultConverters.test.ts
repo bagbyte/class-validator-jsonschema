@@ -95,7 +95,7 @@ class User {
   @validator.IsHexColor() isHexColor: string
   @validator.IsHexadecimal() isHexadecimal: string
   @validator.IsIP() isIPv4: string
-  @validator.IsIP('6') isIPv6: string
+  @validator.IsIP(6) isIPv6: string
   @validator.IsISBN() isISBN: string
   @validator.IsISIN() isISIN: string
   @validator.IsISO8601() isISO8601: string
